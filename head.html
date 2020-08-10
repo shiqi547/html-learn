@@ -2,20 +2,33 @@
 <html>
 
 <body>
-    <h1>一级标题</h2>
-        <p>第一次练习(paragraph1)</p>
-        <p>超链接：<a href="https://www.w3cschool.cn">HTML基础</a></p>
-        <p>paragraph2</p>
-        <p>总共有六级标题h1~h6</p>
-        <hr>
-        <!-- 分割线 -->
+    <div id="container" style="width:800px"></div>
+    <div id="header" style="background-color:rgba(153, 149, 90, 0.61);">
+        <h1 style="margin-bottom:0;">Learning of HTML</h1>
+    </div>
+    <div id="menu" style="background-color:#7e9455;height:1950px;widows: 200px;float:left;">
+        <b>Menu</b><br>
+        第一天的基础运用<br>
+        第二天的表格<br>
+        第三天的列表等</div>
+    <div id="content" style="background-color:#aa9898;height:1950px;width:800px;float:left;">
+        <hr> <!-- 分割线 -->
+        <h1>第一天的基础运用</h1>
+        <h2>学习总结1</h2>
+        <p> 标题用h（共有六级标题h1～h6），段落用p，分割线用</p>
+        <p> 超链接：<a href="https://www.w3cschool.cn">HTML基础</a></p>
+        <p> 用！-- xxx --表示总计</p>
         picture:<img src="./index.jpeg" width="206" height="150">
         <hr>
+        <p> 表示强调用strong（粗体）：</p>
         表示<strong>强调</strong>
-        <p>学会怎样<br>如何换行</p>
-        <b>加粗</b><br><i>斜体</i>
-        <h2>二级标题</h2>
-        <p>
+
+        <p>br表示换行：
+            学会怎样<br>如何<strong>换行</strong></p>
+        <b>加粗用b</b>与<i>斜体用i</i>
+        <sub> 下标sub</sub> 和 <sup> 上标sup</sup>
+        <hr>
+        <h1>第二天的表格</h1>
         <table border="5" width="400" height="150" bordercolor="green" bgcolor="yellow">
             <thead>
                 <tr>
@@ -43,7 +56,54 @@
                     <td> 数据4</td>
                 </tr>
             </tbody>
-            </p>
+        </table>
+        <hr>
+        <h1>第三天的列表等</h1>
+        <h2>三种列表：无序(ul,li)，有序(ol,li)，自定义(dl,dt,dd)</h2>
+        <ul>
+            <li>无序列表1</li>
+            <li>无序列表2</li>
+        </ul>
+        </ul>
+        <ol>
+            <li>有序列表1</li>
+            <li>有序列表2</li>
+        </ol>
+        <dl>
+            <dt>列表标题1</dt>
+            <dd>列表内容1</dd>
+            <dt>列表标题2</dt>
+            <dd>列表内容2</dd>
+        </dl>
+        <hr>
+        <h2>请完成如下信息</h2>
+        <form>
+            name: <input type="text" name="name"><br>
+        </form>
+        <form>
+            账号: <input type="text" name="账号"><br>
+        </form>
+        <form>
+            Password: <input type="password" name="pwd">
+        </form>
+        <h3>单选</h3>
+        <form>
+            <input type="radio" name="sex" value="male">Male<br>
+            <input type="radio" name="sex" value="female">Female
+        </form>
+        <h3>多选</h3>
+        <form>
+            <input type="checkbox" name="work" value="大二">大二学生<br>
+            <input type="checkbox" name="work" value="大一">大一学生
+        </form>
+        <form name="input" action="html_form_action.php" method="get">
+            Username: <input type="text" name="user">
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <iframe src="./text1" width="200" height="200"></iframe>
+    <div id="footer" style="background-color:#acb688;clear:both;text-align:center;">
+        此页面出于吴十七</div>
 </body>
 
 </html>
