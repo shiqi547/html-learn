@@ -2,22 +2,22 @@
 <html>
 
 <body>
-    <div id="container" style="width:800px"></div>
+    <div id="container" style="width:1000px"></div>
     <div id="header" style="background-color:rgba(153, 149, 90, 0.61);">
         <h1 style="margin-bottom:0;">Learning of HTML</h1>
     </div>
-    <div id="menu" style="background-color:#7e9455;height:1950px;widows: 200px;float:left;">
+    <div id="menu" style="background-color:#7e9455;height:2700px;widows: 200px;float:left;">
         <b>Menu</b><br>
         第一天的基础运用<br>
         第二天的表格<br>
         第三天的列表等</div>
-    <div id="content" style="background-color:#aa9898;height:1950px;width:800px;float:left;">
+    <div id="content" style="background-color:#aa9898;height:2700px;width:800px;float:left;">
         <hr> <!-- 分割线 -->
         <h1>第一天的基础运用</h1>
         <h2>学习总结1</h2>
-        <p> 标题用h（共有六级标题h1～h6），段落用p，分割线用</p>
+        <p> 标题用h（共有六级标题h1～h6），段落用p，分割线用hr</p>
         <p> 超链接：<a href="https://www.w3cschool.cn">HTML基础</a></p>
-        <p> 用！-- xxx --表示总计</p>
+        <p> 用！-- xxx --表示解释</p>
         picture:<img src="./index.jpeg" width="206" height="150">
         <hr>
         <p> 表示强调用strong（粗体）：</p>
@@ -32,7 +32,7 @@
         <table border="5" width="400" height="150" bordercolor="green" bgcolor="yellow">
             <thead>
                 <tr>
-                    <td colspan="4">This is the head of the table</td>
+                    <th colspan="4">This is the head of the table</th>
                 </tr>
             </thead>
             <tfoot>
@@ -101,9 +101,37 @@
             <input type="submit" value="Submit">
         </form>
         <hr>
-        <iframe src="./text1" width="200" height="200"></iframe>
-    <div id="footer" style="background-color:#acb688;clear:both;text-align:center;">
-        此页面出于吴十七</div>
+        <iframe src="./text1.html" width="200" height="200"></iframe>
+        <h>第四天</h>
+        <hr>
+        <iframe src="/text1.html_iframe.htm" width="400" height="400" name="iframe_a"></iframe>
+        <p><a href="https://www.w3cschool.cn" target="iframe_a">HTML的链接</a></p>
+        <script>
+            document.write("Hello World!")
+        </script>
+        <p id="demo">
+            项目一，点击下面按钮，将会有变化。
+        </p>
+
+        <script>
+            function Function1() {
+                document.getElementById("demo").innerHTML = "你好，世界";
+            }
+        </script>
+        <button type="button" onclick="Function1()">点击1</button>
+        <hr>
+        <p id="em">
+            点击下列按钮，改变字体样式。
+        </p>
+        <script>
+            function Function2() {
+                x = document.getElementById("em")
+                x.style.color = "#7e9455";
+            }
+        </script>
+        <button type="button" onclick="Function2()">点击2</button>
+        <div id="footer" style="background-color:#acb688;clear:both;text-align:center;">
+            此页面出于吴十七</div>
 </body>
 
 </html>
